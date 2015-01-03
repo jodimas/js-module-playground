@@ -1,6 +1,6 @@
 var moduleExample = (function () {
 
-    var privateVar = '',
+    var privateVar = 'm',
         privateVar2,
         publicVar = "publicVar";
 
