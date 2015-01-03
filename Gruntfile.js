@@ -18,13 +18,22 @@ module.exports = function(grunt) {
                     helpers: 'spec/*Helper.js'
                 }
             }
-        }
+        },
+        watch: {
+            scripts: {
+                files: ['src/**/*.js'],
+                tasks: ['jasmine'],
+                options: {
+                    spawn: false,
+                },
+            },
+        },
     });
 
     // Register tasks.
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-jasmine');
-
+    grunt.loadNpmTasks('grunt-contrib-watch');
     // Default task.
     //grunt.registerTask('default', ['jasmine']);
     grunt.registerTask('default', ['jasmine','uglify']);
