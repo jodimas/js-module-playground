@@ -58,7 +58,7 @@ moduleExample.subModule1 = (function (res) {
     }
 
     function getName() {
-        return name + moduleExample.getName() + ' Submodul';
+        return moduleExample.getName() + ' Submodul';
     }
 
     return {

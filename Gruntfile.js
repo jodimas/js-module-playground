@@ -27,5 +27,5 @@ module.exports = function(grunt) {
 
     // Default task.
     //grunt.registerTask('default', ['jasmine']);
-    grunt.registerTask('default', ['uglify', 'jasmine']);
+    grunt.registerTask('default', ['jasmine','uglify']);
 };

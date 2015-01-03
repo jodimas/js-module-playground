@@ -3,7 +3,7 @@ describe('moduleExample',function(){
 
     it('test setName', function(){
         moduleExample.subModule1.setName("Muster");
-        expect(moduleExample.subModule1.getName()).toBe("MusterMuster bin im submodule Submodul");
+        expect(moduleExample.subModule1.getName()).toBe("Muster bin im submodule Submodul");
     });
 
 
